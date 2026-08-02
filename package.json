@@ -1,0 +1,45 @@
+{
+  "name": "pdf-manipulation-toolkit",
+  "version": "1.0.0",
+  "description": "Biblioteca Node.js para manipulacao de PDFs: merge/split de paginas, extracao de texto, rotacao e metadados. Construida sobre pdf-lib e pdf-parse.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/",
+    "lint": "prettier --check \"src/**/*.js\" \"test/**/*.mjs\" \"test/index.js\" \"scripts/*.mjs\"",
+    "start": "node scripts/demo.mjs"
+  },
+  "keywords": [
+    "pdf",
+    "pdf-lib",
+    "pdf-parse",
+    "merge",
+    "split",
+    "extract-text",
+    "rotate",
+    "metadata",
+    "pdf-manipulation"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "pdf-lib": "1.17.1",
+    "pdf-parse": "1.1.1"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6"
+  }
+}
